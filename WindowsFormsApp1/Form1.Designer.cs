@@ -44,15 +44,27 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.blockBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.moneyBtn = new System.Windows.Forms.Button();
             this.Drag = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.dragControl1 = new WindowsFormsApp1.DragControl();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.moneyPanel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.moneyHackBtn = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.blockPanel = new System.Windows.Forms.Panel();
+            this.dirtBtn = new System.Windows.Forms.Button();
+            this.siltBtn = new System.Windows.Forms.Button();
+            this.sandBtn = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.blockHackBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.Drag.SuspendLayout();
+            this.moneyPanel.SuspendLayout();
+            this.blockPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -106,9 +118,9 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.blockBtn);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.moneyBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -243,21 +255,22 @@
             this.panel4.Size = new System.Drawing.Size(16, 66);
             this.panel4.TabIndex = 3;
             // 
-            // button3
+            // blockBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(13, 156);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(248, 69);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Block Hack";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.blockBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.blockBtn.FlatAppearance.BorderSize = 0;
+            this.blockBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.blockBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blockBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.blockBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.blockBtn.Location = new System.Drawing.Point(13, 156);
+            this.blockBtn.Name = "blockBtn";
+            this.blockBtn.Size = new System.Drawing.Size(248, 69);
+            this.blockBtn.TabIndex = 2;
+            this.blockBtn.Text = "Block Hack";
+            this.blockBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.blockBtn.UseVisualStyleBackColor = false;
+            this.blockBtn.Click += new System.EventHandler(this.blockBtn_Click);
             // 
             // panel3
             // 
@@ -267,26 +280,27 @@
             this.panel3.Size = new System.Drawing.Size(16, 66);
             this.panel3.TabIndex = 1;
             // 
-            // button2
+            // moneyBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(13, 85);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(248, 69);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Money Cheat";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.moneyBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.moneyBtn.FlatAppearance.BorderSize = 0;
+            this.moneyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.moneyBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moneyBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.moneyBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.moneyBtn.Location = new System.Drawing.Point(13, 85);
+            this.moneyBtn.Name = "moneyBtn";
+            this.moneyBtn.Size = new System.Drawing.Size(248, 69);
+            this.moneyBtn.TabIndex = 0;
+            this.moneyBtn.Text = "Money Cheat";
+            this.moneyBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.moneyBtn.UseVisualStyleBackColor = false;
+            this.moneyBtn.Click += new System.EventHandler(this.moneyBtn_Click);
             // 
             // Drag
             // 
             this.Drag.BackColor = System.Drawing.Color.Goldenrod;
-            this.Drag.Controls.Add(this.button9);
+            this.Drag.Controls.Add(this.exitBtn);
             this.Drag.Dock = System.Windows.Forms.DockStyle.Top;
             this.Drag.ForeColor = System.Drawing.Color.Maroon;
             this.Drag.Location = new System.Drawing.Point(250, 0);
@@ -294,32 +308,176 @@
             this.Drag.Size = new System.Drawing.Size(750, 30);
             this.Drag.TabIndex = 11;
             // 
-            // button9
+            // exitBtn
             // 
-            this.button9.BackColor = System.Drawing.Color.Goldenrod;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Location = new System.Drawing.Point(720, 0);
-            this.button9.Margin = new System.Windows.Forms.Padding(0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(30, 32);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "X";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.exitBtn.BackColor = System.Drawing.Color.Goldenrod;
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.exitBtn.Location = new System.Drawing.Point(720, 0);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(30, 32);
+            this.exitBtn.TabIndex = 0;
+            this.exitBtn.Text = "X";
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // dragControl1
             // 
             this.dragControl1.SelectControl = this.Drag;
             // 
-            // panel2
+            // moneyPanel
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(250, 30);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 570);
-            this.panel2.TabIndex = 12;
+            this.moneyPanel.Controls.Add(this.textBox1);
+            this.moneyPanel.Controls.Add(this.moneyHackBtn);
+            this.moneyPanel.Controls.Add(this.label7);
+            this.moneyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.moneyPanel.Location = new System.Drawing.Point(250, 30);
+            this.moneyPanel.Name = "moneyPanel";
+            this.moneyPanel.Size = new System.Drawing.Size(750, 570);
+            this.moneyPanel.TabIndex = 12;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(240, 234);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(270, 34);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // moneyHackBtn
+            // 
+            this.moneyHackBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.moneyHackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.moneyHackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moneyHackBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.moneyHackBtn.Location = new System.Drawing.Point(305, 287);
+            this.moneyHackBtn.Name = "moneyHackBtn";
+            this.moneyHackBtn.Size = new System.Drawing.Size(140, 50);
+            this.moneyHackBtn.TabIndex = 1;
+            this.moneyHackBtn.Text = "Hack";
+            this.moneyHackBtn.UseVisualStyleBackColor = false;
+            this.moneyHackBtn.Click += new System.EventHandler(this.moneyHackBtn_Click);
+            // 
+            // label7
+            // 
+            this.label7.AllowDrop = true;
+            this.label7.AutoSize = true;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label7.Location = new System.Drawing.Point(230, 55);
+            this.label7.MinimumSize = new System.Drawing.Size(312, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(312, 55);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Money Cheat";
+            // 
+            // blockPanel
+            // 
+            this.blockPanel.Controls.Add(this.dirtBtn);
+            this.blockPanel.Controls.Add(this.siltBtn);
+            this.blockPanel.Controls.Add(this.sandBtn);
+            this.blockPanel.Controls.Add(this.label6);
+            this.blockPanel.Controls.Add(this.textBox2);
+            this.blockPanel.Controls.Add(this.blockHackBtn);
+            this.blockPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.blockPanel.Location = new System.Drawing.Point(250, 30);
+            this.blockPanel.Name = "blockPanel";
+            this.blockPanel.Size = new System.Drawing.Size(750, 570);
+            this.blockPanel.TabIndex = 2;
+            // 
+            // dirtBtn
+            // 
+            this.dirtBtn.BackColor = System.Drawing.Color.PowderBlue;
+            this.dirtBtn.FlatAppearance.BorderSize = 0;
+            this.dirtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dirtBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dirtBtn.Image = global::WindowsFormsApp1.Properties.Resources.dirt;
+            this.dirtBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.dirtBtn.Location = new System.Drawing.Point(468, 379);
+            this.dirtBtn.Name = "dirtBtn";
+            this.dirtBtn.Size = new System.Drawing.Size(110, 150);
+            this.dirtBtn.TabIndex = 8;
+            this.dirtBtn.Text = "Dirt";
+            this.dirtBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.dirtBtn.UseVisualStyleBackColor = false;
+            this.dirtBtn.Click += new System.EventHandler(this.dirtBtn_Click);
+            // 
+            // siltBtn
+            // 
+            this.siltBtn.BackColor = System.Drawing.Color.PowderBlue;
+            this.siltBtn.FlatAppearance.BorderSize = 0;
+            this.siltBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.siltBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siltBtn.Image = global::WindowsFormsApp1.Properties.Resources.silt;
+            this.siltBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.siltBtn.Location = new System.Drawing.Point(320, 379);
+            this.siltBtn.Name = "siltBtn";
+            this.siltBtn.Size = new System.Drawing.Size(110, 150);
+            this.siltBtn.TabIndex = 7;
+            this.siltBtn.Text = "Silt";
+            this.siltBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.siltBtn.UseVisualStyleBackColor = false;
+            this.siltBtn.Click += new System.EventHandler(this.siltBtn_Click);
+            // 
+            // sandBtn
+            // 
+            this.sandBtn.BackColor = System.Drawing.Color.PowderBlue;
+            this.sandBtn.FlatAppearance.BorderSize = 0;
+            this.sandBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sandBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sandBtn.Image = global::WindowsFormsApp1.Properties.Resources.sand;
+            this.sandBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.sandBtn.Location = new System.Drawing.Point(172, 379);
+            this.sandBtn.Name = "sandBtn";
+            this.sandBtn.Size = new System.Drawing.Size(110, 150);
+            this.sandBtn.TabIndex = 6;
+            this.sandBtn.Text = "Sand";
+            this.sandBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.sandBtn.UseVisualStyleBackColor = false;
+            this.sandBtn.Click += new System.EventHandler(this.sandBtn_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label6.Location = new System.Drawing.Point(243, 55);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(264, 55);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Block Hack";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(240, 234);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(270, 34);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "0";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // blockHackBtn
+            // 
+            this.blockHackBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.blockHackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.blockHackBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blockHackBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.blockHackBtn.Location = new System.Drawing.Point(305, 287);
+            this.blockHackBtn.Name = "blockHackBtn";
+            this.blockHackBtn.Size = new System.Drawing.Size(140, 50);
+            this.blockHackBtn.TabIndex = 3;
+            this.blockHackBtn.Text = "Hack";
+            this.blockHackBtn.UseVisualStyleBackColor = false;
+            this.blockHackBtn.Click += new System.EventHandler(this.blockHackBtn_Click);
             // 
             // Form1
             // 
@@ -327,7 +485,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.blockPanel);
+            this.Controls.Add(this.moneyPanel);
             this.Controls.Add(this.Drag);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -337,6 +496,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.Drag.ResumeLayout(false);
+            this.moneyPanel.ResumeLayout(false);
+            this.moneyPanel.PerformLayout();
+            this.blockPanel.ResumeLayout(false);
+            this.blockPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -350,11 +513,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Drag;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button moneyBtn;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button blockBtn;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel7;
@@ -362,10 +525,20 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button5;
         private DragControl dragControl1;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel moneyPanel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button moneyHackBtn;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel blockPanel;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button blockHackBtn;
+        private System.Windows.Forms.Button sandBtn;
+        private System.Windows.Forms.Button siltBtn;
+        private System.Windows.Forms.Button dirtBtn;
     }
 }
 
