@@ -1,0 +1,13 @@
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Memory.dll
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Memory.xml
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Money Trainer.csprojAssemblyReference.cache
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Money Trainer.csproj.GenerateResource.cache
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Money Trainer.csproj.CoreCompileInputs.cache
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Money Trainer.csproj.CopyComplete
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IIoW Trainer.exe.config
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IIoW Trainer.exe
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\IIoW Trainer.pdb
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\IIoW Trainer.exe
+C:\Users\andyd\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\IIoW Trainer.pdb
